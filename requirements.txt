@@ -1,0 +1,29 @@
+# EIF2AK Discovery Engine — requirements.txt
+# Python 3.10+ · Streamlit Community Cloud compatible
+
+# ── Core Framework ────────────────────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── Data Manipulation ─────────────────────────────────────────────────────────
+pandas>=2.0.0
+numpy>=1.26.0
+
+# ── NCBI / Bioinformatics ─────────────────────────────────────────────────────
+biopython>=1.83
+GEOparse>=2.0.4
+mygene>=3.2.2
+
+# ── Differential Expression ───────────────────────────────────────────────────
+pydeseq2>=0.4.0
+
+# ── HTTP / API ────────────────────────────────────────────────────────────────
+requests>=2.31.0
+
+# ── Scientific Computing ──────────────────────────────────────────────────────
+scipy>=1.11.0
+
+# ── AI / NLP — BioM-ELECTRA QA Evidence Extraction ───────────────────────────
+# Uses sultan/BioM-ELECTRA-Large-SQuAD2 for biomedical question-answering
+# (~420 MB download on first run; cached by HuggingFace Hub afterwards)
+transformers>=4.40.0
+torch>=2.1.0
